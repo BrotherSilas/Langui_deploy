@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    
+    <!-- Responsive viewport settings for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage, appears in browser tab -->
+    <title>Langui - Translation Tool</title>
+    
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Main container for the translation tool -->
+    <div class="translation-container">
+        <!-- Main heading of the page -->
+        <h1>Langui Translation Tool</h1>
+        
+        <!-- Form for user input and language selection -->
+        <form id="translation-form">
+            <!-- Label and input for the phrase to be translated -->
+            <label for="phrase-input">Enter your phrase:</label>
+            <input type="text" id="phrase-input" placeholder="Type a phrase...">
+            
+            <!-- Label and dropdown for language selection -->
+            <label for="language-select">Choose a language:</label>
+            <select id="language-select">
+                <!-- Options for different languages -->
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="it">Italian</option>
+                <option value="zh">Chinese</option>
+            </select>
+            
+            <!-- Submit button to initiate translation -->
+            <button type="submit">Translate</button>
+        </form>
+        
+        <!-- Container for displaying the translation result -->
+        <div id="translation-result"></div>
+    </div>
+    
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
